@@ -27,7 +27,7 @@ body {
   margin: 0;
   width: 100%;
 
-  flex: 1 0 auto;
+  flex: 1 0 auto; /*texts jo hai vo.. space-around jaise act karhe h*/
   display: flex;
   align-items: center;
   justify-content: center;
