@@ -68,7 +68,7 @@ body {
 /*Background images*/
 .panel1 {
   background: url("./pics/pic1.jpg");
-  background-position: 80%;
+  background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
