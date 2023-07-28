@@ -1,6 +1,6 @@
 body {
-    margin: 0;
-  background-color: palevioletred;
+  margin: 0;
+  background-color: black;
 }
 .panels {
   display: flex;
@@ -19,8 +19,7 @@ body {
   text-align: center;
 
   transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
-    flex 0.7s ease-in-out,
-    background 0.2s;
+    flex 0.7s ease-in-out, background 0.2s;
 }
 /*flex items*/
 .panel > * {
@@ -56,13 +55,13 @@ body {
 }
 
 .panel.open-active :first-child {
-    /*to get inside of page*/
-    transform: translateY(0);
-    transition: all 0.5s;
-  }
+  /*to get inside of page*/
+  transform: translateY(0);
+  transition: all 0.5s;
+}
 .panel.open-active > *:last-child {
-    transform: translateY(0);
-    transition: all 0.5s;
+  transform: translateY(0);
+  transition: all 0.5s;
 }
 
 /*Background images*/
@@ -95,4 +94,22 @@ body {
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 500px) {
+  .panels {
+    min-height: 50vh;
+    min-height: 50dvh;
+  }
+  .panel {
+    font-size: 1rem;
+  }
+
+  .panel p:nth-child(2) {
+    font-size: 2rem;
+  }
+
+  .panel.open {
+    font-size: 1rem;
+  }
 }
